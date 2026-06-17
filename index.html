@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sophia Yang</title>
+  <meta name="description" content="Sophia Yang — 科技業資料分析師，LA。履歷健檢、模擬面試、Coffee Chat。Data Scientist in LA helping you break into US tech.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
@@ -548,6 +549,7 @@
   </style>
 </head>
 <body>
+  <main>
   <div class="container">
 
     <!-- ① Cream — Profile -->
@@ -559,7 +561,10 @@
       </div>
 
       <div class="profile fade">
-        <img class="avatar" src="avatar.JPG" alt="Sophia Yang">
+        <picture>
+          <source srcset="avatar.webp" type="image/webp">
+          <img class="avatar" src="avatar.JPG" alt="Sophia Yang" fetchpriority="high" width="92" height="92">
+        </picture>
         <h1>Sophia Yang</h1>
         <div class="rule-divider"></div>
         <p class="tagline" data-lang="zh">科技業資料分析師 · LA · 台灣出生<br>一起用野心、審美和行動力，設計我們想要的生活</p>
@@ -763,7 +768,10 @@
       <div data-lang="en"><div class="collab-title fade">let's work together</div></div>
       <div class="about-hero">
         <div class="about-identity">
-          <img class="about-avatar" src="avatar2.JPG" alt="Sophia Yang">
+          <picture>
+            <source srcset="avatar2.webp" type="image/webp">
+            <img class="about-avatar" src="avatar2.JPG" alt="Sophia Yang" loading="lazy" width="72" height="72">
+          </picture>
         </div>
         <div class="about-content" data-lang="zh">
           <p>
@@ -792,6 +800,7 @@
     </div>
 
   </div>
+  </main>
 
   <script>
     function submitGuide(e, successId) {
