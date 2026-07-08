@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /Users/sophiayang/Documents/GitHub/landing-page status)",
+      "Bash(git -C /Users/sophiayang/Documents/GitHub/landing-page log --oneline -5)",
+      "Bash(git -C /Users/sophiayang/Documents/GitHub/landing-page diff HEAD -- index.html)",
+      "Bash(git -C /Users/sophiayang/Documents/GitHub/landing-page add updated.html avatar2.JPG)",
+      "Bash(git -C /Users/sophiayang/Documents/GitHub/landing-page rm index.html)",
+      "Bash(git -C /Users/sophiayang/Documents/GitHub/landing-page commit -m ' *)",
+      "Bash(git -C /Users/sophiayang/Documents/GitHub/landing-page remote set-url origin git@github.com:ChunFeiYang/landing-page.git)",
+      "Bash(git -C /Users/sophiayang/Documents/GitHub/landing-page push origin main)",
+      "Bash(git -C /Users/sophiayang/Documents/GitHub/landing-page remote set-url origin https://github.com/ChunFeiYang/landing-page.git)",
+      "Bash(git -C /Users/sophiayang/Documents/GitHub/landing-page config credential.helper osxkeychain)",
+      "Bash(curl -s \"https://data.jsdelivr.com/v1/packages/gh/nickhsine/taipei-sans-tc\")",
+      "Bash(curl -s \"https://api.github.com/repos/nickhsine/taipei-sans-tc/git/trees/v1?recursive=1\")",
+      "Bash(curl -sL \"https://api.github.com/repos/nickhsine/taipei-sans-tc/contents/fonts\")"
+    ]
+  }
+}
