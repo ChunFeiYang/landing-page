@@ -20,4 +20,4 @@ function openPanel(id){if(id==='stories'){filter='all';document.querySelectorAll
 tabs.forEach((t,i)=>{t.addEventListener('click',()=>openPanel(t.dataset.panel));t.addEventListener('keydown',e=>{let next;if(e.key==='ArrowRight')next=(i+1)%tabs.length;if(e.key==='ArrowLeft')next=(i+tabs.length-1)%tabs.length;if(e.key==='Home')next=0;if(e.key==='End')next=tabs.length-1;if(next!==undefined){e.preventDefault();tabs[next].focus();openPanel(tabs[next].dataset.panel)}})});
 document.querySelectorAll('[data-open]').forEach(a=>a.addEventListener('click',()=>openPanel(a.dataset.open)));
 document.querySelectorAll('a[href="#explore"]:not([data-open])').forEach(a=>a.addEventListener('click',()=>openPanel('collaborate')));
-document.querySelector('#language').addEventListener('click',()=>{document.querySelector('#windowtitle').textContent=document.querySelector('[aria-selected="true"] [data-en]').textContent});openPanel('collaborate');
+document.querySelector('#language').addEventListener('click',()=>{document.querySelector('#windowtitle').textContent=document.querySelector('[aria-selected="true"] [data-en]').textContent});openPanel('stories');
